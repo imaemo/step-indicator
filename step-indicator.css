@@ -1,0 +1,104 @@
+    .step-indicator {
+        display: table;
+        width: 100%;
+        position: relative;
+        /*margin: auto;*/
+    }
+
+    .step-indicator li {
+        display: table-cell;
+        position: relative;
+    }
+
+    .step-indicator .arrow {
+        background-color: #e5e5e5;
+        height: 2px;
+        display: block;
+        position: relative;
+        top: -12px;
+        left: 50%;
+        margin: auto 30px;
+    }
+
+    .step-indicator .arrow::after {
+        content: "";
+        border: 6px solid transparent;
+        border-left-color: #e5e5e5;
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: -12px;
+        top: -5px;
+    }
+
+    .step-indicator .success .step {
+        width: 24px;
+        height: 24px;
+        border: 1px solid lightslategray;
+        background-color: #4CAF50;
+        border-radius: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .step-indicator .failed .step {
+        width: 24px;
+        height: 24px;
+        border: 1px solid lightslategray;
+        background-color: #ff3b30;
+        border-radius: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .step-indicator .active .step {
+        width: 24px;
+        height: 24px;
+        border: 1px solid lightslategray;
+        background-color: white;
+        border-radius: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin: 0 auto;
+        animation: gradient 1.2s infinite;
+        -webkit-animation: gradient 1.2s infinite;
+        -moz-animation: gradient 1.2s infinite;
+    }
+
+    .step-indicator .pending .step {
+        width: 24px;
+        height: 24px;
+        border: 1px solid lightslategray;
+        background-color: lightgrey;
+        border-radius: 18px;
+        line-height: 24px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .step-indicator .caption {
+        box-sizing: border-box;
+        padding: 11px 12px;
+        text-align: center;
+    }
+
+    @keyframes gradient {
+        0%,
+        5% {
+            background: #f2cc9e;
+        }
+        25% {
+            background: #fcc179;
+        }
+        50% {
+            background-color: #f5a747;
+        }
+        75% {
+            background-color: #fa8a00
+        }
+        100% {
+            background-color: #f2cc9e;
+        }
+    }
