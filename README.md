@@ -5,7 +5,8 @@ a simple step indicator
 
 #### Usage:
 
-It has four state: `success`, `failed`, `active`, `pending`
+It has four state: `success`, `failed`, `active`, `pending`   
+Last `li` don't use `span`
 
 
 ``` html

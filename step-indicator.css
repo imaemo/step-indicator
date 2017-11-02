@@ -2,7 +2,7 @@
         display: table;
         width: 100%;
         position: relative;
-        /*margin: auto;*/
+        table-layout: fixed;
     }
 
     .step-indicator li {
